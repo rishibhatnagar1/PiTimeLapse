@@ -1,6 +1,5 @@
-''' pip install picamera requests time '''
+''' The code has been written by Rishi Gaurav Bhatnagar and Rahul Thota to capture a time lapse video by merging various images over a period of time. '''
 import picamera
-
 import time
 '''Initialize camera '''
 camera = picamera.PiCamera()
@@ -20,3 +19,4 @@ while True:
 	if count > 4000:
 		break
 
+''' Once the images have been captured, we can encode them using ffmpeg '''
