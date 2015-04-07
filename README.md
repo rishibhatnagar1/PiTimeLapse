@@ -8,3 +8,5 @@ ffmpeg -f image2 -i image_stream%d.jpg -vcodec mpeg4 -b 2000k outvideo2.avi
 
 image_stream001.jpg is the typical input image name
 2000k refers to the bit rate for compression (higher this number, better the output resolution)
+http://zulko.github.io/blog/2013/09/27/read-and-write-video-frames-in-python-using-ffmpeg/
+http://stackoverflow.com/questions/16748148/running-cmd-in-python-ffmpeg has more details on it.
