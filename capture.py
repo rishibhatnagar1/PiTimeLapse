@@ -11,6 +11,10 @@ def captureImage(initialName,timeInterval):
         #filePost(initialName+'.jpg',finalName) #This function is going to add the extension to finalName
         time.sleep(timeInterval)
 '''The image being capturd here will be stored in the same folder as the code '''
+def convVideo():
+	#Basically the subprocess needs to be called here.
+
+
 count = 0
 while True:
         captureImage("image_stream"+str(count),0.25)
