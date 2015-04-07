@@ -13,8 +13,15 @@ def captureImage(initialName,timeInterval):
 '''The image being capturd here will be stored in the same folder as the code '''
 def convVideo():
 	#Basically the subprocess needs to be called here.
-
-
+	command = "/usr/bin/sudo " #command is not right yet, need to be worked on.
+    	import subprocess
+    	process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
+    	output = process.communicate()[0]
+    	print output
+def initialBlink():
+def finalBlink():
+def startButton():
+def stopCapture():
 count = 0
 while True:
         captureImage("image_stream"+str(count),0.25)
