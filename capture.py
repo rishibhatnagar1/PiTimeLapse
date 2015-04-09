@@ -45,6 +45,12 @@ def startButton():
 	return GPIO.input(p3)
 def stopCapture():
 	return GPIO.input(p4)
+def covert2Video():
+	command = "/usr/bin/sudo  "#command here need to be verified first
+    	import subprocess
+    	process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
+    	output = process.communicate()[0]
+    	print output
 count = 0
 while True:
 	#Write the condition for starting image capture
